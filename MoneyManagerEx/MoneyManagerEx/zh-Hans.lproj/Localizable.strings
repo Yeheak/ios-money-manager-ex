@@ -1,0 +1,16 @@
+/* 
+  InfoPlist.strings
+  MoneyManagerEx
+
+  Created by taotao on 14/10/19.
+  Copyright (c) 2014年 taotao. All rights reserved.
+*/
+
+/* Launch Alert Message*/
+"ALERT_MSG" = "这个教程教给你如何创建多语言app！";
+/*Cancel button*/
+"CANCEL_BUTTON"="取消";
+
+"NEW_ACCOUNT"="新建用户";
+
+"MONEY_MANAGER"="Money Manager Ex";
