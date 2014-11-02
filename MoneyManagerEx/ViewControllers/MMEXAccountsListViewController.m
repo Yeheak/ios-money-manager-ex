@@ -13,6 +13,7 @@
 @end
 
 @implementation MMEXAccountsListViewController
+@synthesize accounts;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -33,5 +34,19 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+#pragma mark --
+#pragma table view delegate and datasource
+#pragma mark -- 
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return 1;
+}
+
+- (NSString *)tableView:(UITableView *)tableView
+titleForHeaderInSection:(NSInteger)section
+{
+    return @"";
+}
 
 @end

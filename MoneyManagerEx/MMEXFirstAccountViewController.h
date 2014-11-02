@@ -8,8 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MMEXFirstAccountViewController : UIViewController
+@interface MMEXFirstAccountViewController : UIViewController<UITableViewDelegate, UITableViewDataSource>
 
+@property (nonatomic, strong) IBOutlet UITableView *accounts;
+
+#pragma mark -- 
+#pragma summary IBOutlet
+#pragma mark --
+@property (nonatomic, strong) IBOutlet UILabel *incomeLabel;
+@property (nonatomic, strong) IBOutlet UILabel *outcomeLabel;
+@property (nonatomic, strong) IBOutlet UILabel *balanceLabel;
 
 @end
 

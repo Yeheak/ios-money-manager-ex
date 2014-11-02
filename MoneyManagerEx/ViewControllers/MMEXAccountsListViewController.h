@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MMEXAccountsListViewController : UIViewController
+@interface MMEXAccountsListViewController : UIViewController<UITableViewDataSource, UITableViewDelegate>
+
+@property (nonatomic, strong) IBOutlet UITableView *accounts;
 
 @end

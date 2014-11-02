@@ -11,7 +11,12 @@
 		BE28D35319FA889E00FE96B4 /* MMEXAccountsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE28D35219FA889E00FE96B4 /* MMEXAccountsListViewController.m */; };
 		BE446C011A0127EE0044C7E2 /* MMEXSlideMenuMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE446C001A0127EE0044C7E2 /* MMEXSlideMenuMainViewController.m */; };
 		BE446C041A01289B0044C7E2 /* MMEXSlideMenuLeftTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE446C031A01289B0044C7E2 /* MMEXSlideMenuLeftTableViewController.m */; };
-		BE446C401A012C010044C7E2 /* simpleMenuButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BE446C3F1A012C010044C7E2 /* simpleMenuButton@2x.png */; };
+		BE5B07B01A0669EE007B6467 /* CellBg_HasRightArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BE5B07AD1A0669EE007B6467 /* CellBg_HasRightArrow@2x.png */; };
+		BE5B07B11A0669EE007B6467 /* CellBg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BE5B07AE1A0669EE007B6467 /* CellBg@2x.png */; };
+		BE5B07B21A0669EE007B6467 /* simpleMenuButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BE5B07AF1A0669EE007B6467 /* simpleMenuButton@2x.png */; };
+		BE634C821A03C20300363273 /* MMEXProductHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = BE634C811A03C20300363273 /* MMEXProductHelper.m */; };
+		BE7711E51A05ECDA005F0EA2 /* AccountAssets.m in Sources */ = {isa = PBXBuildFile; fileRef = BE7711E41A05ECDA005F0EA2 /* AccountAssets.m */; };
+		BE7711E61A05ECDA005F0EA2 /* AccountAssets.m in Sources */ = {isa = PBXBuildFile; fileRef = BE7711E41A05ECDA005F0EA2 /* AccountAssets.m */; };
 		BEAA890F19F38DFB00C0617D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BEAA890E19F38DFB00C0617D /* main.m */; };
 		BEAA891219F38DFB00C0617D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BEAA891119F38DFB00C0617D /* AppDelegate.m */; };
 		BEAA891519F38DFB00C0617D /* MoneyManagerEx.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BEAA891319F38DFB00C0617D /* MoneyManagerEx.xcdatamodeld */; };
@@ -43,7 +48,13 @@
 		BE446C001A0127EE0044C7E2 /* MMEXSlideMenuMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMEXSlideMenuMainViewController.m; path = ViewControllers/MMEXSlideMenuMainViewController.m; sourceTree = "<group>"; };
 		BE446C021A01289B0044C7E2 /* MMEXSlideMenuLeftTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMEXSlideMenuLeftTableViewController.h; path = ViewControllers/MMEXSlideMenuLeftTableViewController.h; sourceTree = "<group>"; };
 		BE446C031A01289B0044C7E2 /* MMEXSlideMenuLeftTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMEXSlideMenuLeftTableViewController.m; path = ViewControllers/MMEXSlideMenuLeftTableViewController.m; sourceTree = "<group>"; };
-		BE446C3F1A012C010044C7E2 /* simpleMenuButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "simpleMenuButton@2x.png"; path = "resource/images/simpleMenuButton@2x.png"; sourceTree = "<group>"; };
+		BE5B07AD1A0669EE007B6467 /* CellBg_HasRightArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "CellBg_HasRightArrow@2x.png"; path = "Resource/images/Common/CellBg_HasRightArrow@2x.png"; sourceTree = "<group>"; };
+		BE5B07AE1A0669EE007B6467 /* CellBg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "CellBg@2x.png"; path = "Resource/images/Common/CellBg@2x.png"; sourceTree = "<group>"; };
+		BE5B07AF1A0669EE007B6467 /* simpleMenuButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "simpleMenuButton@2x.png"; path = "Resource/images/Common/simpleMenuButton@2x.png"; sourceTree = "<group>"; };
+		BE634C801A03C20300363273 /* MMEXProductHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMEXProductHelper.h; path = Common/MMEXProductHelper.h; sourceTree = "<group>"; };
+		BE634C811A03C20300363273 /* MMEXProductHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMEXProductHelper.m; path = Common/MMEXProductHelper.m; sourceTree = "<group>"; };
+		BE7711E31A05ECDA005F0EA2 /* AccountAssets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AccountAssets.h; path = Model/AccountAssets.h; sourceTree = "<group>"; };
+		BE7711E41A05ECDA005F0EA2 /* AccountAssets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AccountAssets.m; path = Model/AccountAssets.m; sourceTree = "<group>"; };
 		BEAA890919F38DFB00C0617D /* MoneyManagerEx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoneyManagerEx.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEAA890D19F38DFB00C0617D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BEAA890E19F38DFB00C0617D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -106,9 +117,75 @@
 		BE446C3E1A012BF40044C7E2 /* images */ = {
 			isa = PBXGroup;
 			children = (
-				BE446C3F1A012C010044C7E2 /* simpleMenuButton@2x.png */,
+				BE5B07AA1A0668FB007B6467 /* common */,
 			);
 			name = images;
+			sourceTree = "<group>";
+		};
+		BE5605321A04E035004D6B5A /* SlideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				BE446BFF1A0127EE0044C7E2 /* MMEXSlideMenuMainViewController.h */,
+				BE446C001A0127EE0044C7E2 /* MMEXSlideMenuMainViewController.m */,
+				BE446C021A01289B0044C7E2 /* MMEXSlideMenuLeftTableViewController.h */,
+				BE446C031A01289B0044C7E2 /* MMEXSlideMenuLeftTableViewController.m */,
+			);
+			name = SlideMenu;
+			sourceTree = "<group>";
+		};
+		BE5605331A04E05A004D6B5A /* HomePage */ = {
+			isa = PBXGroup;
+			children = (
+				BEAA891619F38DFB00C0617D /* MMEXFirstAccountViewController.h */,
+				BEAA891719F38DFB00C0617D /* MMEXFirstAccountViewController.m */,
+			);
+			name = HomePage;
+			sourceTree = "<group>";
+		};
+		BE5605341A04E07C004D6B5A /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				BEAA898819F3D5D400C0617D /* MMEXCreateAccountViewController.h */,
+				BEAA898919F3D5D400C0617D /* MMEXCreateAccountViewController.m */,
+				BE28D35119FA889E00FE96B4 /* MMEXAccountsListViewController.h */,
+				BE28D35219FA889E00FE96B4 /* MMEXAccountsListViewController.m */,
+			);
+			name = Account;
+			sourceTree = "<group>";
+		};
+		BE5605351A04E08C004D6B5A /* Transaction */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Transaction;
+			sourceTree = "<group>";
+		};
+		BE5B07AA1A0668FB007B6467 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				BE5B07AD1A0669EE007B6467 /* CellBg_HasRightArrow@2x.png */,
+				BE5B07AE1A0669EE007B6467 /* CellBg@2x.png */,
+				BE5B07AF1A0669EE007B6467 /* simpleMenuButton@2x.png */,
+			);
+			name = common;
+			sourceTree = "<group>";
+		};
+		BE634C7F1A03C16F00363273 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				BE634C801A03C20300363273 /* MMEXProductHelper.h */,
+				BE634C811A03C20300363273 /* MMEXProductHelper.m */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		BE7711E21A05EC85005F0EA2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BE7711E31A05ECDA005F0EA2 /* AccountAssets.h */,
+				BE7711E41A05ECDA005F0EA2 /* AccountAssets.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 		BEAA890019F38DFB00C0617D = {
@@ -135,6 +212,8 @@
 		BEAA890B19F38DFB00C0617D /* MoneyManagerEx */ = {
 			isa = PBXGroup;
 			children = (
+				BE634C7F1A03C16F00363273 /* Common */,
+				BE7711E21A05EC85005F0EA2 /* Model */,
 				BE446C3D1A012BE00044C7E2 /* Resouces */,
 				BEAA898719F3D4C800C0617D /* ViewControllers */,
 				BEAA891019F38DFB00C0617D /* AppDelegate.h */,
@@ -178,16 +257,10 @@
 		BEAA898719F3D4C800C0617D /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				BEAA891619F38DFB00C0617D /* MMEXFirstAccountViewController.h */,
-				BEAA891719F38DFB00C0617D /* MMEXFirstAccountViewController.m */,
-				BEAA898819F3D5D400C0617D /* MMEXCreateAccountViewController.h */,
-				BEAA898919F3D5D400C0617D /* MMEXCreateAccountViewController.m */,
-				BE28D35119FA889E00FE96B4 /* MMEXAccountsListViewController.h */,
-				BE28D35219FA889E00FE96B4 /* MMEXAccountsListViewController.m */,
-				BE446BFF1A0127EE0044C7E2 /* MMEXSlideMenuMainViewController.h */,
-				BE446C001A0127EE0044C7E2 /* MMEXSlideMenuMainViewController.m */,
-				BE446C021A01289B0044C7E2 /* MMEXSlideMenuLeftTableViewController.h */,
-				BE446C031A01289B0044C7E2 /* MMEXSlideMenuLeftTableViewController.m */,
+				BE5605351A04E08C004D6B5A /* Transaction */,
+				BE5605341A04E07C004D6B5A /* Account */,
+				BE5605331A04E05A004D6B5A /* HomePage */,
+				BE5605321A04E035004D6B5A /* SlideMenu */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -285,8 +358,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				BEAA891B19F38DFB00C0617D /* Main.storyboard in Resources */,
+				BE5B07B11A0669EE007B6467 /* CellBg@2x.png in Resources */,
+				BE5B07B01A0669EE007B6467 /* CellBg_HasRightArrow@2x.png in Resources */,
 				BEAA893D19F396CE00C0617D /* Localizable.strings in Resources */,
-				BE446C401A012C010044C7E2 /* simpleMenuButton@2x.png in Resources */,
+				BE5B07B21A0669EE007B6467 /* simpleMenuButton@2x.png in Resources */,
 				BEAA892019F38DFB00C0617D /* LaunchScreen.xib in Resources */,
 				BEAA891D19F38DFB00C0617D /* Images.xcassets in Resources */,
 			);
@@ -340,10 +415,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE446C041A01289B0044C7E2 /* MMEXSlideMenuLeftTableViewController.m in Sources */,
+				BE634C821A03C20300363273 /* MMEXProductHelper.m in Sources */,
 				BEAA898A19F3D5D400C0617D /* MMEXCreateAccountViewController.m in Sources */,
 				BEAA891219F38DFB00C0617D /* AppDelegate.m in Sources */,
 				BEAA891519F38DFB00C0617D /* MoneyManagerEx.xcdatamodeld in Sources */,
 				BEAA891819F38DFB00C0617D /* MMEXFirstAccountViewController.m in Sources */,
+				BE7711E51A05ECDA005F0EA2 /* AccountAssets.m in Sources */,
 				BE446C011A0127EE0044C7E2 /* MMEXSlideMenuMainViewController.m in Sources */,
 				BE28D35319FA889E00FE96B4 /* MMEXAccountsListViewController.m in Sources */,
 				BEAA890F19F38DFB00C0617D /* main.m in Sources */,
@@ -354,6 +431,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE7711E61A05ECDA005F0EA2 /* AccountAssets.m in Sources */,
 				BEAA892C19F38DFB00C0617D /* MoneyManagerExTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
