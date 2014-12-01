@@ -22,3 +22,21 @@
 "FIRST_ACCOUTNS_TABLE_HEADER_TITLE" = "All Accounts";
 
 "TEST_NAME" = "Tao Tao";
+
+"YOUR_ACCOUNT_NAME" = "your account name";
+
+"ACCOUNT_STATUS" = "Open";
+
+"SET_ACCOUNT_TYPE_PAGE_TITLE" = "Account Type";
+
+"SET_ACCOUNT_STATUS_PAGE_TITLE" = "Account Status";
+
+"ACCOUNT_TYPE_0" = "支票/存款/信用卡";
+
+"ACCOUNT_TYPE_1" = "投资";
+
+"ACCOUNT_TYPE_2" = "期限";
+
+"ACCOUNT_STATUS_0" = "打开";
+
+"ACCOUNT_STATUS_1" = "关闭";

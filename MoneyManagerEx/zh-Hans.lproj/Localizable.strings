@@ -22,3 +22,21 @@
 "FIRST_ACCOUTNS_TABLE_HEADER_TITLE" = "所有账户";
 
 "TEST_NAME" = "陶雨轩";
+
+"YOUR_ACCOUNT_NAME" = "你的账户名";
+
+"ACCOUNT_STATUS" = "打开";
+
+"SET_ACCOUNT_TYPE_PAGE_TITLE" = "账户类型";
+
+"SET_ACCOUNT_STATUS_PAGE_TITLE" = "账户状态";
+
+"ACCOUNT_TYPE_0" = "支票/存款/信用卡";
+
+"ACCOUNT_TYPE_1" = "投资";
+
+"ACCOUNT_TYPE_2" = "期限";
+
+"ACCOUNT_STATUS_0" = "打开";
+
+"ACCOUNT_STATUS_1" = "关闭";

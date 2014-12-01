@@ -17,6 +17,8 @@
 		BE634C821A03C20300363273 /* MMEXProductHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = BE634C811A03C20300363273 /* MMEXProductHelper.m */; };
 		BE7711E51A05ECDA005F0EA2 /* AccountAssets.m in Sources */ = {isa = PBXBuildFile; fileRef = BE7711E41A05ECDA005F0EA2 /* AccountAssets.m */; };
 		BE7711E61A05ECDA005F0EA2 /* AccountAssets.m in Sources */ = {isa = PBXBuildFile; fileRef = BE7711E41A05ECDA005F0EA2 /* AccountAssets.m */; };
+		BE97611B1A2B13A000FD08C4 /* MMEXSetAccountTypeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE97611A1A2B13A000FD08C4 /* MMEXSetAccountTypeTableViewController.m */; };
+		BE97611E1A2B16C700FD08C4 /* MMEXSetAccountStatusTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE97611D1A2B16C700FD08C4 /* MMEXSetAccountStatusTableViewController.m */; };
 		BEAA890F19F38DFB00C0617D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BEAA890E19F38DFB00C0617D /* main.m */; };
 		BEAA891219F38DFB00C0617D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BEAA891119F38DFB00C0617D /* AppDelegate.m */; };
 		BEAA891519F38DFB00C0617D /* MoneyManagerEx.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BEAA891319F38DFB00C0617D /* MoneyManagerEx.xcdatamodeld */; };
@@ -55,6 +57,12 @@
 		BE634C811A03C20300363273 /* MMEXProductHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMEXProductHelper.m; path = Common/MMEXProductHelper.m; sourceTree = "<group>"; };
 		BE7711E31A05ECDA005F0EA2 /* AccountAssets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AccountAssets.h; path = Model/AccountAssets.h; sourceTree = "<group>"; };
 		BE7711E41A05ECDA005F0EA2 /* AccountAssets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AccountAssets.m; path = Model/AccountAssets.m; sourceTree = "<group>"; };
+		BE9761181A2B061900FD08C4 /* TypeDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TypeDef.h; path = Model/TypeDef.h; sourceTree = "<group>"; };
+		BE9761191A2B13A000FD08C4 /* MMEXSetAccountTypeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMEXSetAccountTypeTableViewController.h; path = ViewControllers/MMEXSetAccountTypeTableViewController.h; sourceTree = "<group>"; };
+		BE97611A1A2B13A000FD08C4 /* MMEXSetAccountTypeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMEXSetAccountTypeTableViewController.m; path = ViewControllers/MMEXSetAccountTypeTableViewController.m; sourceTree = "<group>"; };
+		BE97611C1A2B16C700FD08C4 /* MMEXSetAccountStatusTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMEXSetAccountStatusTableViewController.h; path = ViewControllers/MMEXSetAccountStatusTableViewController.h; sourceTree = "<group>"; };
+		BE97611D1A2B16C700FD08C4 /* MMEXSetAccountStatusTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMEXSetAccountStatusTableViewController.m; path = ViewControllers/MMEXSetAccountStatusTableViewController.m; sourceTree = "<group>"; };
+		BE9761201A2B1F9B00FD08C4 /* MMEXPageJumpProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MMEXPageJumpProtocol.h; path = ViewControllers/PageJumpProtocol/MMEXPageJumpProtocol.h; sourceTree = "<group>"; };
 		BEAA890919F38DFB00C0617D /* MoneyManagerEx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoneyManagerEx.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEAA890D19F38DFB00C0617D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BEAA890E19F38DFB00C0617D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -145,10 +153,15 @@
 		BE5605341A04E07C004D6B5A /* Account */ = {
 			isa = PBXGroup;
 			children = (
+				BE97611F1A2B1F4200FD08C4 /* PageJumpProtocol */,
 				BEAA898819F3D5D400C0617D /* MMEXCreateAccountViewController.h */,
 				BEAA898919F3D5D400C0617D /* MMEXCreateAccountViewController.m */,
 				BE28D35119FA889E00FE96B4 /* MMEXAccountsListViewController.h */,
 				BE28D35219FA889E00FE96B4 /* MMEXAccountsListViewController.m */,
+				BE9761191A2B13A000FD08C4 /* MMEXSetAccountTypeTableViewController.h */,
+				BE97611A1A2B13A000FD08C4 /* MMEXSetAccountTypeTableViewController.m */,
+				BE97611C1A2B16C700FD08C4 /* MMEXSetAccountStatusTableViewController.h */,
+				BE97611D1A2B16C700FD08C4 /* MMEXSetAccountStatusTableViewController.m */,
 			);
 			name = Account;
 			sourceTree = "<group>";
@@ -184,8 +197,17 @@
 			children = (
 				BE7711E31A05ECDA005F0EA2 /* AccountAssets.h */,
 				BE7711E41A05ECDA005F0EA2 /* AccountAssets.m */,
+				BE9761181A2B061900FD08C4 /* TypeDef.h */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		BE97611F1A2B1F4200FD08C4 /* PageJumpProtocol */ = {
+			isa = PBXGroup;
+			children = (
+				BE9761201A2B1F9B00FD08C4 /* MMEXPageJumpProtocol.h */,
+			);
+			name = PageJumpProtocol;
 			sourceTree = "<group>";
 		};
 		BEAA890019F38DFB00C0617D = {
@@ -423,7 +445,9 @@
 				BE7711E51A05ECDA005F0EA2 /* AccountAssets.m in Sources */,
 				BE446C011A0127EE0044C7E2 /* MMEXSlideMenuMainViewController.m in Sources */,
 				BE28D35319FA889E00FE96B4 /* MMEXAccountsListViewController.m in Sources */,
+				BE97611B1A2B13A000FD08C4 /* MMEXSetAccountTypeTableViewController.m in Sources */,
 				BEAA890F19F38DFB00C0617D /* main.m in Sources */,
+				BE97611E1A2B16C700FD08C4 /* MMEXSetAccountStatusTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

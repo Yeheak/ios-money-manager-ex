@@ -9,21 +9,31 @@
 
 "1Ap-49-keI.normalTitle" = "添加账户";
 
-"icl-so-Lxy.text" = "账户名称";
+// 添加帐户界面
 
-"lfQ-FV-7ST.text" = "账户类型";
+"ZVB-eM-Lvi.text" = "账户名称";
 
-"TJq-22-rVD.text" = "货币类型";
+"LdU-xn-mQq.text" = "账户类型";
 
-"9kQ-jb-no9.text" = "初始金额";
+"Ygf-1c-VkS.text" = "货币类型";
 
-"iB7-j7-4qz.text" = "账户状态";
+"twx-ZO-9On.text" = "初始金额";
 
-"B0Y-Qv-wbu.text" = "账号";
+"Kp4-SU-CKP.text" = "账户状态";
 
-"Cfb-WL-Ewq.text" = "商户名称";
+"s0G-O7-aUI.text" = "账号";
 
-"FBO-Zv-mrF.text" = "备注";
+"CWJ-Lp-yqe.text" = "商户名称";
+
+"Q0Q-77-KJS.text" = "商户网站";
+
+"h15-JW-C9i.text" = "商户联系方式";
+
+"AAb-qn-PYc.text" = "登陆信息";
+
+"jjJ-Eg-WUv.text" = "备注";
+
+// 已有账户初始界面
 
 "ETn-Mf-KHh.text" = "损益表：本月";
 
@@ -44,3 +54,15 @@
 "ssK-uG-oBI.text" = "货币类型";
 
 "hS8-P5-v5l.text" = "收款人";
+
+"5Ck-jU-X4Q.text" = "支票/存款/信用卡";
+
+"Cpm-if-5XS.text" = "投资";
+
+"cw7-JN-j1c.text" = "期限";
+
+"a7T-oh-8MU.text" = "打开";
+
+"H8I-XK-fWk.text" = "关闭";
+
+"pJn-H5-9NX.text" = "支票/存款/信用卡";
