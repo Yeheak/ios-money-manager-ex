@@ -40,3 +40,8 @@
 "ACCOUNT_STATUS_0" = "打开";
 
 "ACCOUNT_STATUS_1" = "关闭";
+
+"ACCOUNT_LIST_TITLE" = "所有账户";
+
+// 添加交易界面
+"ADD_TRANSACTION_TITLE" = "添加交易";

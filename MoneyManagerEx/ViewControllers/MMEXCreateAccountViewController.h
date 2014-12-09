@@ -28,6 +28,13 @@
 @property (nonatomic, assign) EnumAccountStatus      accountStatusEnumValue;
 @property (nonatomic, assign) NSInteger              currencyTypeValue;
 
+// data
+@property (nonatomic, assign) CreateAccountPageType  pageType;
+@property (nonatomic, assign) NSString              *editPageTitle;
+// edit page (init data)
+//@property (nonatomic, strong) MMEXAccountModel      *eidtAccountData;
+ - (void)loadEditData;
+
 - (IBAction)resignTheKeyBoard:(id)sender;
 
 @end

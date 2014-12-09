@@ -15,6 +15,7 @@
 		BE5B07B11A0669EE007B6467 /* CellBg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BE5B07AE1A0669EE007B6467 /* CellBg@2x.png */; };
 		BE5B07B21A0669EE007B6467 /* simpleMenuButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BE5B07AF1A0669EE007B6467 /* simpleMenuButton@2x.png */; };
 		BE634C821A03C20300363273 /* MMEXProductHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = BE634C811A03C20300363273 /* MMEXProductHelper.m */; };
+		BE698C391A3744FA00D6F71C /* MMEXAddTransactionViewControllerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE698C381A3744FA00D6F71C /* MMEXAddTransactionViewControllerTableViewController.m */; };
 		BE7711E51A05ECDA005F0EA2 /* AccountAssets.m in Sources */ = {isa = PBXBuildFile; fileRef = BE7711E41A05ECDA005F0EA2 /* AccountAssets.m */; };
 		BE7711E61A05ECDA005F0EA2 /* AccountAssets.m in Sources */ = {isa = PBXBuildFile; fileRef = BE7711E41A05ECDA005F0EA2 /* AccountAssets.m */; };
 		BE97611B1A2B13A000FD08C4 /* MMEXSetAccountTypeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE97611A1A2B13A000FD08C4 /* MMEXSetAccountTypeTableViewController.m */; };
@@ -55,6 +56,8 @@
 		BE5B07AF1A0669EE007B6467 /* simpleMenuButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "simpleMenuButton@2x.png"; path = "Resource/images/Common/simpleMenuButton@2x.png"; sourceTree = "<group>"; };
 		BE634C801A03C20300363273 /* MMEXProductHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMEXProductHelper.h; path = Common/MMEXProductHelper.h; sourceTree = "<group>"; };
 		BE634C811A03C20300363273 /* MMEXProductHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMEXProductHelper.m; path = Common/MMEXProductHelper.m; sourceTree = "<group>"; };
+		BE698C371A3744FA00D6F71C /* MMEXAddTransactionViewControllerTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMEXAddTransactionViewControllerTableViewController.h; path = ViewControllers/MMEXAddTransactionViewControllerTableViewController.h; sourceTree = "<group>"; };
+		BE698C381A3744FA00D6F71C /* MMEXAddTransactionViewControllerTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMEXAddTransactionViewControllerTableViewController.m; path = ViewControllers/MMEXAddTransactionViewControllerTableViewController.m; sourceTree = "<group>"; };
 		BE7711E31A05ECDA005F0EA2 /* AccountAssets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AccountAssets.h; path = Model/AccountAssets.h; sourceTree = "<group>"; };
 		BE7711E41A05ECDA005F0EA2 /* AccountAssets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AccountAssets.m; path = Model/AccountAssets.m; sourceTree = "<group>"; };
 		BE9761181A2B061900FD08C4 /* TypeDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TypeDef.h; path = Model/TypeDef.h; sourceTree = "<group>"; };
@@ -169,6 +172,8 @@
 		BE5605351A04E08C004D6B5A /* Transaction */ = {
 			isa = PBXGroup;
 			children = (
+				BE698C371A3744FA00D6F71C /* MMEXAddTransactionViewControllerTableViewController.h */,
+				BE698C381A3744FA00D6F71C /* MMEXAddTransactionViewControllerTableViewController.m */,
 			);
 			name = Transaction;
 			sourceTree = "<group>";
@@ -190,6 +195,13 @@
 				BE634C811A03C20300363273 /* MMEXProductHelper.m */,
 			);
 			name = Common;
+			sourceTree = "<group>";
+		};
+		BE698C331A37415B00D6F71C /* TransactionType */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = TransactionType;
 			sourceTree = "<group>";
 		};
 		BE7711E21A05EC85005F0EA2 /* Model */ = {
@@ -279,6 +291,7 @@
 		BEAA898719F3D4C800C0617D /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				BE698C331A37415B00D6F71C /* TransactionType */,
 				BE5605351A04E08C004D6B5A /* Transaction */,
 				BE5605341A04E07C004D6B5A /* Account */,
 				BE5605331A04E05A004D6B5A /* HomePage */,
@@ -445,6 +458,7 @@
 				BE7711E51A05ECDA005F0EA2 /* AccountAssets.m in Sources */,
 				BE446C011A0127EE0044C7E2 /* MMEXSlideMenuMainViewController.m in Sources */,
 				BE28D35319FA889E00FE96B4 /* MMEXAccountsListViewController.m in Sources */,
+				BE698C391A3744FA00D6F71C /* MMEXAddTransactionViewControllerTableViewController.m in Sources */,
 				BE97611B1A2B13A000FD08C4 /* MMEXSetAccountTypeTableViewController.m in Sources */,
 				BEAA890F19F38DFB00C0617D /* main.m in Sources */,
 				BE97611E1A2B16C700FD08C4 /* MMEXSetAccountStatusTableViewController.m in Sources */,

@@ -31,10 +31,18 @@
 @synthesize accountStatusEnumValue;
 @synthesize currencyTypeValue;
 
+@synthesize pageType;
+@synthesize editPageTitle;
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.title = NSLocalizedString(@"NEW_ACCOUNT", nil);
+    if (pageType != kCreateAccountPageType_NewAccount) {
+        self.title = editPageTitle;
+    }
+    else {
+        self.title = NSLocalizedString(@"NEW_ACCOUNT", nil);
+    }
     
     UIBarButtonItem *rightButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone
                                                                                  target:self
@@ -94,6 +102,11 @@
 - (IBAction)resignTheKeyBoard:(id)sender
 {
     [self resignFirstResponder];
+}
+
+- (void)loadEditData
+{
+    
 }
 
 @end

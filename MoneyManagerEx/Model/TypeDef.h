@@ -22,4 +22,10 @@ typedef enum
     kAccountStatus_Close = 1,
 }EnumAccountStatus;
 
+typedef enum
+{
+    kCreateAccountPageType_NewAccount = 0,
+    kCreateAccountPageType_EditAccount = 1,
+}CreateAccountPageType;
+
 #endif
