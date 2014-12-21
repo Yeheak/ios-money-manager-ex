@@ -22,10 +22,7 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     //self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    UIBarButtonItem *rightButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone
-                                                                                 target:self
-                                                                                 action:@selector(addTransaction:)];
-    
+    UIBarButtonItem *rightButton = [[UIBarButtonItem alloc] initWithTitle:NSLocalizedString(@"ADD_TRANSACTION_BTN_TITLE", nil) style:UIBarButtonItemStylePlain target:self action:@selector(addTransaction:)];
     self.navigationItem.rightBarButtonItems = [NSArray arrayWithObjects:rightButton, nil];
     self.title = NSLocalizedString(@"ADD_TRANSACTION_TITLE", nil);
 }

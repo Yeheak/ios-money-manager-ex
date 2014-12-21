@@ -45,3 +45,5 @@
 
 // 添加交易界面
 "ADD_TRANSACTION_TITLE" = "添加交易";
+
+"ADD_TRANSACTION_BTN_TITLE" = "添加";

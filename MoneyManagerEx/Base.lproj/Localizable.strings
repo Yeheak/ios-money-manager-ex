@@ -44,3 +44,5 @@
 "ACCOUNT_LIST_TITLE" = "All Acounts";
 
 "ADD_TRANSACTION_TITLE" = "Add Transaction";
+
+"ADD_TRANSACTION_BTN_TITLE" = "Add";

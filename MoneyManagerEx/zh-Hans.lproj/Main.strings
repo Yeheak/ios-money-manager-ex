@@ -9,6 +9,21 @@
 
 "1Ap-49-keI.normalTitle" = "添加账户";
 
+// 主menu页
+"1ax-AM-aZH.text" = "首页";
+
+"vJ9-w1-bYL.text" = "添加交易";
+
+"DB0-cX-5YM.text" = "账户";
+
+"uKg-DK-bfU.text" = "交易类型";
+
+"ssK-uG-oBI.text" = "货币类型";
+
+"hS8-P5-v5l.text" = "收款人";
+
+"iC2-mG-yHr.text" = "交易列表";
+
 // 添加帐户界面
 
 "ZVB-eM-Lvi.text" = "账户名称";
@@ -43,18 +58,6 @@
 
 "fAF-T1-QzH.text" = "结余：";
 
-"1ax-AM-aZH.text" = "首页";
-
-"vJ9-w1-bYL.text" = "添加交易";
-
-"DB0-cX-5YM.text" = "账户";
-
-"uKg-DK-bfU.text" = "交易类型";
-
-"ssK-uG-oBI.text" = "货币类型";
-
-"hS8-P5-v5l.text" = "收款人";
-
 "5Ck-jU-X4Q.text" = "支票/存款/信用卡";
 
 "Cpm-if-5XS.text" = "投资";
@@ -69,3 +72,22 @@
 
 //  账户列表界面
 "Rv0-eU-cxk.normalTitle" = "添加";
+
+// 添加帐户界面
+"rd8-ip-68O.text" = "所属账户";
+
+"iOW-S3-Nh0.text" = "交易类型";
+
+"DSe-Bd-EWQ.text" = "状态";
+
+"1fI-J9-Lak.text" = "日期";
+
+"VVz-KZ-tx9.text" = "金额";
+
+"1bM-TP-oLo.text" = "收款人";
+
+"0T7-mF-R3b.text" = "交易类别";
+
+"Jze-VQ-WwX.text" = "交易编号";
+
+"sIP-v5-5QX.text" = "备注";
