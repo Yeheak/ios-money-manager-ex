@@ -10,11 +10,16 @@
         <!--Root View Controller - Transaction List-->
         <scene sceneID="ueB-tq-o0v">
             <objects>
-                <tableViewController id="Sdt-WH-mxE" userLabel="Root View Controller - Transaction List" sceneMemberID="viewController">
+                <tableViewController id="Sdt-WH-mxE" userLabel="Root View Controller - Transaction List" customClass="MMEXTransactionListTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="AhT-bU-mOY">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" id="Qsz-rP-ZQT">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </searchBar>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="MC5-Du-9G2">
                                 <autoresizingMask key="autoresizingMask"/>
@@ -28,11 +33,28 @@
                             <outlet property="delegate" destination="Sdt-WH-mxE" id="90Y-45-8WA"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="mVd-V9-URn"/>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="mVd-V9-URn">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="icr-Ht-2gu">
+                            <connections>
+                                <segue destination="yEe-nG-SN0" kind="show" id="QJ7-X1-HV5"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="searchDisplayController" destination="CKd-rI-3p1" id="swo-6l-qvt"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0SO-Hq-hzy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="CKd-rI-3p1">
+                    <connections>
+                        <outlet property="delegate" destination="Sdt-WH-mxE" id="gyW-ht-giE"/>
+                        <outlet property="searchContentsController" destination="Sdt-WH-mxE" id="Ncr-p1-S7S"/>
+                        <outlet property="searchResultsDataSource" destination="Sdt-WH-mxE" id="PKd-KD-6Pm"/>
+                        <outlet property="searchResultsDelegate" destination="Sdt-WH-mxE" id="9Tc-K4-NeO"/>
+                    </connections>
+                </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="417" y="2737.5"/>
+            <point key="canvasLocation" x="1227" y="2994"/>
         </scene>
         <!--Navigation Controller - Transaction List-->
         <scene sceneID="WNp-of-au3">
@@ -48,7 +70,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Jf-Gt-SRv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-285" y="2179.5"/>
+            <point key="canvasLocation" x="405" y="2813.25"/>
         </scene>
         <!--Slide Menu Left Table View Controller-->
         <scene sceneID="w08-pa-qyl">
@@ -373,7 +395,7 @@
                                             </variation>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="UuL-5F-u6K" kind="custom" customClass="AMSlideMenuContentSegue" id="UBy-EN-o00"/>
+                                            <segue destination="UuL-5F-u6K" kind="custom" identifier="Payees" customClass="AMSlideMenuContentSegue" id="UBy-EN-o00"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -404,7 +426,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L44-mf-iQp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2089.5" y="325.5"/>
+            <point key="canvasLocation" x="2056.5" y="327"/>
         </scene>
         <!--Root View Controller - AddTranscation-->
         <scene sceneID="wzG-1F-5pP">
@@ -477,11 +499,11 @@
                                                     <exclude reference="VSY-YH-cDw"/>
                                                 </mask>
                                                 <mask key="constraints">
+                                                    <exclude reference="Sup-nD-Vob"/>
+                                                    <exclude reference="hTe-Xd-FcB"/>
                                                     <exclude reference="ZU7-lz-YH0"/>
                                                     <exclude reference="hZh-zM-1yc"/>
                                                     <exclude reference="ki2-Y5-ef0"/>
-                                                    <exclude reference="Sup-nD-Vob"/>
-                                                    <exclude reference="hTe-Xd-FcB"/>
                                                 </mask>
                                             </variation>
                                             <variation key="heightClass=regular-widthClass=compact">
@@ -490,11 +512,11 @@
                                                     <include reference="VSY-YH-cDw"/>
                                                 </mask>
                                                 <mask key="constraints">
+                                                    <include reference="Sup-nD-Vob"/>
+                                                    <include reference="hTe-Xd-FcB"/>
                                                     <include reference="ZU7-lz-YH0"/>
                                                     <include reference="hZh-zM-1yc"/>
                                                     <include reference="ki2-Y5-ef0"/>
-                                                    <include reference="Sup-nD-Vob"/>
-                                                    <include reference="hTe-Xd-FcB"/>
                                                 </mask>
                                             </variation>
                                         </tableViewCellContentView>
@@ -559,11 +581,11 @@
                                                     <exclude reference="3oq-Nw-UTZ"/>
                                                 </mask>
                                                 <mask key="constraints">
+                                                    <exclude reference="17M-V0-Mly"/>
+                                                    <exclude reference="7md-zD-gjV"/>
                                                     <exclude reference="8vu-FR-Uhh"/>
                                                     <exclude reference="Go2-mj-Vev"/>
                                                     <exclude reference="vIL-bS-ST9"/>
-                                                    <exclude reference="17M-V0-Mly"/>
-                                                    <exclude reference="7md-zD-gjV"/>
                                                 </mask>
                                             </variation>
                                             <variation key="heightClass=regular-widthClass=compact">
@@ -572,11 +594,11 @@
                                                     <include reference="3oq-Nw-UTZ"/>
                                                 </mask>
                                                 <mask key="constraints">
+                                                    <include reference="17M-V0-Mly"/>
+                                                    <include reference="7md-zD-gjV"/>
                                                     <include reference="8vu-FR-Uhh"/>
                                                     <include reference="Go2-mj-Vev"/>
                                                     <include reference="vIL-bS-ST9"/>
-                                                    <include reference="17M-V0-Mly"/>
-                                                    <include reference="7md-zD-gjV"/>
                                                 </mask>
                                             </variation>
                                         </tableViewCellContentView>
@@ -809,14 +831,14 @@
                                                     <exclude reference="Fh9-DN-kiE"/>
                                                 </mask>
                                                 <mask key="constraints">
-                                                    <exclude reference="RbY-VM-uKi"/>
-                                                    <exclude reference="dGX-OD-4MK"/>
                                                     <exclude reference="Fwc-t7-8sW"/>
                                                     <exclude reference="dyd-Fz-DtJ"/>
                                                     <exclude reference="i7f-ye-aP9"/>
                                                     <exclude reference="nch-ev-y0t"/>
                                                     <exclude reference="puI-hW-Rwu"/>
                                                     <exclude reference="wJS-nS-kI0"/>
+                                                    <exclude reference="RbY-VM-uKi"/>
+                                                    <exclude reference="dGX-OD-4MK"/>
                                                 </mask>
                                             </variation>
                                             <variation key="heightClass=regular-widthClass=compact">
@@ -825,14 +847,14 @@
                                                     <include reference="Fh9-DN-kiE"/>
                                                 </mask>
                                                 <mask key="constraints">
-                                                    <include reference="RbY-VM-uKi"/>
-                                                    <include reference="dGX-OD-4MK"/>
                                                     <include reference="Fwc-t7-8sW"/>
                                                     <include reference="dyd-Fz-DtJ"/>
                                                     <exclude reference="i7f-ye-aP9"/>
                                                     <exclude reference="nch-ev-y0t"/>
                                                     <include reference="puI-hW-Rwu"/>
                                                     <exclude reference="wJS-nS-kI0"/>
+                                                    <include reference="RbY-VM-uKi"/>
+                                                    <include reference="dGX-OD-4MK"/>
                                                 </mask>
                                             </variation>
                                         </tableViewCellContentView>
@@ -1065,13 +1087,13 @@
                                                     <exclude reference="03K-BI-Bza"/>
                                                 </mask>
                                                 <mask key="constraints">
-                                                    <exclude reference="eXf-VR-nnQ"/>
-                                                    <exclude reference="szX-lq-pgr"/>
                                                     <exclude reference="VXZ-KZ-Fzu"/>
                                                     <exclude reference="dge-mS-UiC"/>
                                                     <exclude reference="nwS-Oa-goy"/>
                                                     <exclude reference="ooD-1k-jA8"/>
                                                     <exclude reference="qeN-7X-d1V"/>
+                                                    <exclude reference="eXf-VR-nnQ"/>
+                                                    <exclude reference="szX-lq-pgr"/>
                                                 </mask>
                                             </variation>
                                             <variation key="heightClass=regular-widthClass=compact">
@@ -1080,13 +1102,13 @@
                                                     <include reference="03K-BI-Bza"/>
                                                 </mask>
                                                 <mask key="constraints">
-                                                    <include reference="eXf-VR-nnQ"/>
-                                                    <include reference="szX-lq-pgr"/>
                                                     <exclude reference="VXZ-KZ-Fzu"/>
                                                     <include reference="dge-mS-UiC"/>
                                                     <exclude reference="nwS-Oa-goy"/>
                                                     <include reference="ooD-1k-jA8"/>
                                                     <include reference="qeN-7X-d1V"/>
+                                                    <include reference="eXf-VR-nnQ"/>
+                                                    <include reference="szX-lq-pgr"/>
                                                 </mask>
                                             </variation>
                                         </tableViewCellContentView>
@@ -1187,7 +1209,14 @@
                             <outlet property="delegate" destination="yEe-nG-SN0" id="jgF-Nc-A4j"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="c62-9b-3Gc"/>
+                    <navigationItem key="navigationItem" title="Add Transaction" id="c62-9b-3Gc">
+                        <barButtonItem key="rightBarButtonItem" title="Done" style="done" id="nGB-o4-bpu">
+                            <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="addTransaction:" destination="yEe-nG-SN0" id="S0w-TZ-rNY"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="glp-hY-lpK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1218,7 +1247,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qeM-Vv-T1O" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2878.5" y="1689.75"/>
+            <point key="canvasLocation" x="3079.5" y="1689.75"/>
         </scene>
         <!--Navigation Controller - TranscationType-->
         <scene sceneID="YfU-g3-NIj">
@@ -1234,7 +1263,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O47-rf-z4Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2041.5" y="1681.5"/>
+            <point key="canvasLocation" x="2371.5" y="1695"/>
         </scene>
         <!--Root View Controller - CurrencyType-->
         <scene sceneID="qlk-fW-YuZ">
@@ -1261,7 +1290,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RTu-X2-SlE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2898" y="2392.5"/>
+            <point key="canvasLocation" x="3222" y="2409"/>
         </scene>
         <!--Root View Controller - Payees-->
         <scene sceneID="jsk-9n-Lry">
@@ -1304,7 +1333,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="66K-qP-DJ5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2052" y="3202.5"/>
+            <point key="canvasLocation" x="1911" y="3142.5"/>
         </scene>
         <!--Navigation Controller - CurrencyType-->
         <scene sceneID="pLm-mE-t0D">
@@ -1320,7 +1349,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KZR-Fv-NUd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1968" y="2392.5"/>
+            <point key="canvasLocation" x="2371.5" y="2346"/>
         </scene>
         <!--Navigation Controller - add transaction-->
         <scene sceneID="MpW-os-r1v">
@@ -1886,7 +1915,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2919" y="-382.5"/>
+            <point key="canvasLocation" x="2985" y="-378"/>
         </scene>
         <!--Slide Menu Main View Controller-->
         <scene sceneID="xna-db-4Ll">
@@ -4007,7 +4036,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L3U-Nc-ez9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4744.5" y="342.75"/>
+            <point key="canvasLocation" x="4588.5" y="327"/>
         </scene>
         <!--Set Account Type Table View Controller-->
         <scene sceneID="1p4-Qz-ESY">
@@ -4157,7 +4186,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r3b-KT-Rp4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2985" y="319.5"/>
+            <point key="canvasLocation" x="2985" y="327"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="sUX-9e-EAT">
@@ -4182,5 +4211,6 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="xar-qG-Muw"/>
+        <segue reference="QJ7-X1-HV5"/>
     </inferredMetricsTieBreakers>
 </document>

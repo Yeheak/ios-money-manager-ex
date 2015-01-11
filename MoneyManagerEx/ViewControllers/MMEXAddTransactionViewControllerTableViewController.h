@@ -7,9 +7,24 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AMSlideMenuLeftTableViewController.h"
+
+typedef enum
+{
+    AddTransactionFromView_Other = 0,
+    AddTransactionFromView_TransactionList,
+}AddTransactionFromView;
+
+typedef enum
+{
+    AddTransactionType_Add = 0,
+    AddTransactionType_Edit,
+    AddTransactionType_Search,
+}AddTransactionType;
 
 @interface MMEXAddTransactionViewControllerTableViewController : UITableViewController
 
-- (void)addTransaction:(id)sender;
+@property (nonatomic, assign) AddTransactionFromView fromType;
+@property (nonatomic, assign) AddTransactionType     viewType;
 
 @end

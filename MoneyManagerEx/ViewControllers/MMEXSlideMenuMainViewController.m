@@ -44,9 +44,24 @@
         case 0:
             identifier = @"HomePage";
             break;
-//        case 1:
-//            identifier = @"secondRow";
-//            break;
+        case 1:
+            identifier = @"AddTransaction";
+            break;
+        case 2:
+            identifier = @"AccountList";
+            break;
+        case 3:
+            identifier = @"TransactionList";
+            break;
+        case 4:
+            identifier = @"TanscationType";
+            break;
+        case 5:
+            identifier = @"CurrencyType";
+            break;
+        case 6:
+            identifier = @"Payees";
+            break;
     }
     
     return identifier;

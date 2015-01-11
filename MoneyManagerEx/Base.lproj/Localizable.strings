@@ -46,3 +46,9 @@
 "ADD_TRANSACTION_TITLE" = "Add Transaction";
 
 "ADD_TRANSACTION_BTN_TITLE" = "Add";
+
+"TANSACTIONLIST_PAGE_TITLE" = "Tansaction List";
+
+"EDIT_TRANSACTION_TITLE" = "Edit Transaction";
+
+"SEARCH_TRANSACTION_TITLE" = "Search Transaction";

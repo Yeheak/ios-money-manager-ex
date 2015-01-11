@@ -15,6 +15,7 @@
 		BE5B07B11A0669EE007B6467 /* CellBg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BE5B07AE1A0669EE007B6467 /* CellBg@2x.png */; };
 		BE5B07B21A0669EE007B6467 /* simpleMenuButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BE5B07AF1A0669EE007B6467 /* simpleMenuButton@2x.png */; };
 		BE634C821A03C20300363273 /* MMEXProductHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = BE634C811A03C20300363273 /* MMEXProductHelper.m */; };
+		BE643FA91A57EA460056A316 /* MMEXTransactionListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE643FA81A57EA460056A316 /* MMEXTransactionListTableViewController.m */; };
 		BE698C391A3744FA00D6F71C /* MMEXAddTransactionViewControllerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE698C381A3744FA00D6F71C /* MMEXAddTransactionViewControllerTableViewController.m */; };
 		BE7711E51A05ECDA005F0EA2 /* AccountAssets.m in Sources */ = {isa = PBXBuildFile; fileRef = BE7711E41A05ECDA005F0EA2 /* AccountAssets.m */; };
 		BE7711E61A05ECDA005F0EA2 /* AccountAssets.m in Sources */ = {isa = PBXBuildFile; fileRef = BE7711E41A05ECDA005F0EA2 /* AccountAssets.m */; };
@@ -56,6 +57,8 @@
 		BE5B07AF1A0669EE007B6467 /* simpleMenuButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "simpleMenuButton@2x.png"; path = "Resource/images/Common/simpleMenuButton@2x.png"; sourceTree = "<group>"; };
 		BE634C801A03C20300363273 /* MMEXProductHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMEXProductHelper.h; path = Common/MMEXProductHelper.h; sourceTree = "<group>"; };
 		BE634C811A03C20300363273 /* MMEXProductHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMEXProductHelper.m; path = Common/MMEXProductHelper.m; sourceTree = "<group>"; };
+		BE643FA71A57EA460056A316 /* MMEXTransactionListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMEXTransactionListTableViewController.h; path = ViewControllers/MMEXTransactionListTableViewController.h; sourceTree = "<group>"; };
+		BE643FA81A57EA460056A316 /* MMEXTransactionListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMEXTransactionListTableViewController.m; path = ViewControllers/MMEXTransactionListTableViewController.m; sourceTree = "<group>"; };
 		BE698C371A3744FA00D6F71C /* MMEXAddTransactionViewControllerTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMEXAddTransactionViewControllerTableViewController.h; path = ViewControllers/MMEXAddTransactionViewControllerTableViewController.h; sourceTree = "<group>"; };
 		BE698C381A3744FA00D6F71C /* MMEXAddTransactionViewControllerTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMEXAddTransactionViewControllerTableViewController.m; path = ViewControllers/MMEXAddTransactionViewControllerTableViewController.m; sourceTree = "<group>"; };
 		BE7711E31A05ECDA005F0EA2 /* AccountAssets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AccountAssets.h; path = Model/AccountAssets.h; sourceTree = "<group>"; };
@@ -174,6 +177,8 @@
 			children = (
 				BE698C371A3744FA00D6F71C /* MMEXAddTransactionViewControllerTableViewController.h */,
 				BE698C381A3744FA00D6F71C /* MMEXAddTransactionViewControllerTableViewController.m */,
+				BE643FA71A57EA460056A316 /* MMEXTransactionListTableViewController.h */,
+				BE643FA81A57EA460056A316 /* MMEXTransactionListTableViewController.m */,
 			);
 			name = Transaction;
 			sourceTree = "<group>";
@@ -450,6 +455,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE446C041A01289B0044C7E2 /* MMEXSlideMenuLeftTableViewController.m in Sources */,
+				BE643FA91A57EA460056A316 /* MMEXTransactionListTableViewController.m in Sources */,
 				BE634C821A03C20300363273 /* MMEXProductHelper.m in Sources */,
 				BEAA898A19F3D5D400C0617D /* MMEXCreateAccountViewController.m in Sources */,
 				BEAA891219F38DFB00C0617D /* AppDelegate.m in Sources */,

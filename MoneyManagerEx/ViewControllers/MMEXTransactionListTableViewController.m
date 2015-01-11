@@ -1,45 +1,28 @@
 //
-//  MMEXAddTransactionViewControllerTableViewController.m
+//  MMEXTransactionListTableViewController.m
 //  MoneyManagerEx
 //
-//  Created by taotao on 14/12/9.
-//  Copyright (c) 2014年 taotao. All rights reserved.
+//  Created by taotao on 15/1/3.
+//  Copyright (c) 2015年 taotao. All rights reserved.
 //
 
-#import "MMEXAddTransactionViewControllerTableViewController.h"
-#import "UIViewController+AMSlideMenu.h"
+#import "MMEXTransactionListTableViewController.h"
 
-@interface MMEXAddTransactionViewControllerTableViewController ()
-
-- (IBAction)addTransaction:(id)sender;
+@interface MMEXTransactionListTableViewController ()
 
 @end
 
-@implementation MMEXAddTransactionViewControllerTableViewController
-@synthesize fromType;
-@synthesize viewType;
+@implementation MMEXTransactionListTableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    if (AddTransactionType_Add == viewType) {
-        self.title = NSLocalizedString(@"ADD_TRANSACTION_TITLE", nil);
-    }
-    else if (AddTransactionType_Edit == viewType) {
-        self.title = NSLocalizedString(@"EDIT_TRANSACTION_TITLE", nil);
-    }
-    else if (AddTransactionType_Search == viewType) {
-        self.title = NSLocalizedString(@"SEARCH_TRANSACTION_TITLE", nil);
-    }
+    self.title = NSLocalizedString(@"TANSACTIONLIST_PAGE_TITLE", nil);
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     //self.navigationItem.rightBarButtonItem = self.editButtonItem;
-//    UIBarButtonItem *rightButton = [[UIBarButtonItem alloc] initWithTitle:NSLocalizedString(@"ADD_TRANSACTION_BTN_TITLE", nil) style:UIBarButtonItemStylePlain target:self action:@selector(addTransaction:)];
-//    self.navigationItem.rightBarButtonItems = [NSArray arrayWithObjects:rightButton, nil];
-//    self.title = NSLocalizedString(@"ADD_TRANSACTION_TITLE", nil);
-    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -47,21 +30,8 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)addTransaction:(id)sender
-{
-    if (AddTransactionFromView_TransactionList == fromType) {
-        [self.navigationController popViewControllerAnimated:YES];
-    }
-    else {
-        AMSlideMenuMainViewController *mainVC= self.navigationController.mainSlideMenu;
-        NSIndexPath *indexPath = [NSIndexPath indexPathForRow:3 inSection:0];
-        [mainVC openContentViewControllerForMenu:AMSlideMenuLeft atIndexPath:indexPath];
-    }
-}
-
 #pragma mark - Table view data source
 
-/*
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
 #warning Potentially incomplete method implementation.
     // Return the number of sections.
@@ -73,7 +43,7 @@
     // Return the number of rows in the section.
     return 0;
 }
-*/
+
 /*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
@@ -127,5 +97,10 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+- (BOOL)searchBarShouldBeginEditing:(UISearchBar *)searchBar
+{
+    return YES;
+}
 
 @end
