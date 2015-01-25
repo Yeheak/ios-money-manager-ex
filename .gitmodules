@@ -1,3 +1,6 @@
 [submodule "3rd/SQLite.swift"]
 	path = 3rd/SQLite.swift
 	url = https://github.com/moneymanagerex/SQLite.swift
+[submodule "3rd/fwdb"]
+	path = 3rd/fwdb
+	url = https://github.com/ccgus/fmdb
