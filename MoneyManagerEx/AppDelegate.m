@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "MMEXProductHelper.h"
+#import <sqlite3.h>
 
 @interface AppDelegate ()
 
@@ -18,6 +19,23 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    sqlite3* database = Nil;
+    // copy
+    NSString *path = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
+    NSString *dbpath = [path stringByAppendingPathComponent:@"mmex.mmb"];
+    
+    if ([[NSFileManager defaultManager] fileExistsAtPath:dbpath] == YES)
+    {
+        NSString *fromfile = [[NSBundle mainBundle] pathForResource:@"mmex.mmb" ofType:nil];
+        [[NSFileManager defaultManager] copyItemAtPath:fromfile toPath:dbpath error:nil];
+    }
+    
+    // open
+    if (sqlite3_open([dbpath UTF8String], &database) != SQLITE_OK)
+    {
+        NSAssert1(0, @"Failed to open database with message '%s'.", sqlite3_errmsg(database));
+    }
     
     [MMEXProductHelper getPreferredLanguage];
     

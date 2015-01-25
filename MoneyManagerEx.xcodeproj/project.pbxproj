@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8CDFC53753D245C4A9C391DD /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B223519999A0CCDBB883A333 /* libPods.a */; };
+		A3E958FB1A74FA3000815416 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A3E958FA1A74FA3000815416 /* libsqlite3.dylib */; };
 		BE28D35319FA889E00FE96B4 /* MMEXAccountsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE28D35219FA889E00FE96B4 /* MMEXAccountsListViewController.m */; };
 		BE446C011A0127EE0044C7E2 /* MMEXSlideMenuMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE446C001A0127EE0044C7E2 /* MMEXSlideMenuMainViewController.m */; };
 		BE446C041A01289B0044C7E2 /* MMEXSlideMenuLeftTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE446C031A01289B0044C7E2 /* MMEXSlideMenuLeftTableViewController.m */; };
@@ -45,6 +46,7 @@
 
 /* Begin PBXFileReference section */
 		03C6779958AC72F22A83B771 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		A3E958FA1A74FA3000815416 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		B223519999A0CCDBB883A333 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE28D35119FA889E00FE96B4 /* MMEXAccountsListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMEXAccountsListViewController.h; path = ViewControllers/MMEXAccountsListViewController.h; sourceTree = "<group>"; };
 		BE28D35219FA889E00FE96B4 /* MMEXAccountsListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMEXAccountsListViewController.m; path = ViewControllers/MMEXAccountsListViewController.m; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3E958FB1A74FA3000815416 /* libsqlite3.dylib in Frameworks */,
 				8CDFC53753D245C4A9C391DD /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -308,6 +311,7 @@
 		E71A1D42B60E7AF8500E67C7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A3E958FA1A74FA3000815416 /* libsqlite3.dylib */,
 				B223519999A0CCDBB883A333 /* libPods.a */,
 			);
 			name = Frameworks;
