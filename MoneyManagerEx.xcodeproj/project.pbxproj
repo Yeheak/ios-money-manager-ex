@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		8CDFC53753D245C4A9C391DD /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B223519999A0CCDBB883A333 /* libPods.a */; };
 		A3E958FB1A74FA3000815416 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A3E958FA1A74FA3000815416 /* libsqlite3.dylib */; };
+		A3E9592F1A77D04C00815416 /* MMEX_Payee.m in Sources */ = {isa = PBXBuildFile; fileRef = A3E9592E1A77D04C00815416 /* MMEX_Payee.m */; };
+		A3E959321A77D04D00815416 /* MMEX_Subcategory.m in Sources */ = {isa = PBXBuildFile; fileRef = A3E959311A77D04D00815416 /* MMEX_Subcategory.m */; };
+		A3E959351A77D04D00815416 /* MMEX_Category.m in Sources */ = {isa = PBXBuildFile; fileRef = A3E959341A77D04D00815416 /* MMEX_Category.m */; };
 		BE28D35319FA889E00FE96B4 /* MMEXAccountsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE28D35219FA889E00FE96B4 /* MMEXAccountsListViewController.m */; };
 		BE446C011A0127EE0044C7E2 /* MMEXSlideMenuMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE446C001A0127EE0044C7E2 /* MMEXSlideMenuMainViewController.m */; };
 		BE446C041A01289B0044C7E2 /* MMEXSlideMenuLeftTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE446C031A01289B0044C7E2 /* MMEXSlideMenuLeftTableViewController.m */; };
@@ -47,6 +50,12 @@
 /* Begin PBXFileReference section */
 		03C6779958AC72F22A83B771 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		A3E958FA1A74FA3000815416 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		A3E9592D1A77D04C00815416 /* MMEX_Payee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMEX_Payee.h; sourceTree = "<group>"; };
+		A3E9592E1A77D04C00815416 /* MMEX_Payee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMEX_Payee.m; sourceTree = "<group>"; };
+		A3E959301A77D04D00815416 /* MMEX_Subcategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMEX_Subcategory.h; sourceTree = "<group>"; };
+		A3E959311A77D04D00815416 /* MMEX_Subcategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMEX_Subcategory.m; sourceTree = "<group>"; };
+		A3E959331A77D04D00815416 /* MMEX_Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMEX_Category.h; sourceTree = "<group>"; };
+		A3E959341A77D04D00815416 /* MMEX_Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMEX_Category.m; sourceTree = "<group>"; };
 		B223519999A0CCDBB883A333 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE28D35119FA889E00FE96B4 /* MMEXAccountsListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMEXAccountsListViewController.h; path = ViewControllers/MMEXAccountsListViewController.h; sourceTree = "<group>"; };
 		BE28D35219FA889E00FE96B4 /* MMEXAccountsListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMEXAccountsListViewController.m; path = ViewControllers/MMEXAccountsListViewController.m; sourceTree = "<group>"; };
@@ -215,6 +224,12 @@
 		BE7711E21A05EC85005F0EA2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A3E959331A77D04D00815416 /* MMEX_Category.h */,
+				A3E959341A77D04D00815416 /* MMEX_Category.m */,
+				A3E959301A77D04D00815416 /* MMEX_Subcategory.h */,
+				A3E959311A77D04D00815416 /* MMEX_Subcategory.m */,
+				A3E9592D1A77D04C00815416 /* MMEX_Payee.h */,
+				A3E9592E1A77D04C00815416 /* MMEX_Payee.m */,
 				BE7711E31A05ECDA005F0EA2 /* AccountAssets.h */,
 				BE7711E41A05ECDA005F0EA2 /* AccountAssets.m */,
 				BE9761181A2B061900FD08C4 /* TypeDef.h */,
@@ -462,12 +477,15 @@
 				BE643FA91A57EA460056A316 /* MMEXTransactionListTableViewController.m in Sources */,
 				BE634C821A03C20300363273 /* MMEXProductHelper.m in Sources */,
 				BEAA898A19F3D5D400C0617D /* MMEXCreateAccountViewController.m in Sources */,
+				A3E9592F1A77D04C00815416 /* MMEX_Payee.m in Sources */,
 				BEAA891219F38DFB00C0617D /* AppDelegate.m in Sources */,
+				A3E959351A77D04D00815416 /* MMEX_Category.m in Sources */,
 				BEAA891519F38DFB00C0617D /* MoneyManagerEx.xcdatamodeld in Sources */,
 				BEAA891819F38DFB00C0617D /* MMEXFirstAccountViewController.m in Sources */,
 				BE7711E51A05ECDA005F0EA2 /* AccountAssets.m in Sources */,
 				BE446C011A0127EE0044C7E2 /* MMEXSlideMenuMainViewController.m in Sources */,
 				BE28D35319FA889E00FE96B4 /* MMEXAccountsListViewController.m in Sources */,
+				A3E959321A77D04D00815416 /* MMEX_Subcategory.m in Sources */,
 				BE698C391A3744FA00D6F71C /* MMEXAddTransactionViewControllerTableViewController.m in Sources */,
 				BE97611B1A2B13A000FD08C4 /* MMEXSetAccountTypeTableViewController.m in Sources */,
 				BEAA890F19F38DFB00C0617D /* main.m in Sources */,
