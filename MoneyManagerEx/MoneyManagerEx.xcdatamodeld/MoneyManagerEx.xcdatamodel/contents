@@ -1,4 +1,25 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model name="Test1.xcdatamodel" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
-    <elements/>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6254" systemVersion="14B25" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="MMEX_Category" representedClassName="MMEX_Category" syncable="YES">
+        <attribute name="categid" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="categname" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="subcategories" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="MMEX_Subcategory" inverseName="category" inverseEntity="MMEX_Subcategory" syncable="YES"/>
+    </entity>
+    <entity name="MMEX_Payee" representedClassName="MMEX_Payee" syncable="YES">
+        <attribute name="categid" optional="YES" attributeType="Integer 32" defaultValueString="0" indexed="YES" syncable="YES"/>
+        <attribute name="payeeid" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="payeename" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="subcategid" optional="YES" attributeType="Integer 32" defaultValueString="0" indexed="YES" syncable="YES"/>
+    </entity>
+    <entity name="MMEX_Subcategory" representedClassName="MMEX_Subcategory" syncable="YES">
+        <attribute name="cateid" optional="YES" attributeType="Integer 32" defaultValueString="0" indexed="YES" syncable="YES"/>
+        <attribute name="subcategid" optional="YES" attributeType="Integer 32" defaultValueString="0" indexed="YES" syncable="YES"/>
+        <attribute name="subcategname" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="category" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="MMEX_Category" inverseName="subcategories" inverseEntity="MMEX_Category" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="MMEX_Subcategory" positionX="133" positionY="-0" width="128" height="103"/>
+        <element name="MMEX_Category" positionX="-27" positionY="183" width="128" height="88"/>
+        <element name="MMEX_Payee" positionX="313" positionY="189" width="128" height="103"/>
+    </elements>
 </model>
