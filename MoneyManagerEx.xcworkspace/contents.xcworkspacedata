@@ -5,9 +5,6 @@
       location = "group:3rd/fwdb/fmdb.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:3rd/SQLite.swift/SQLite.xcodeproj">
-   </FileRef>
-   <FileRef
       location = "group:MoneyManagerEx.xcodeproj">
    </FileRef>
    <FileRef

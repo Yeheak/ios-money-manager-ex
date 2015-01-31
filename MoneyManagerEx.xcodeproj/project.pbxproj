@@ -12,6 +12,7 @@
 		A3E9592F1A77D04C00815416 /* MMEX_Payee.m in Sources */ = {isa = PBXBuildFile; fileRef = A3E9592E1A77D04C00815416 /* MMEX_Payee.m */; };
 		A3E959321A77D04D00815416 /* MMEX_Subcategory.m in Sources */ = {isa = PBXBuildFile; fileRef = A3E959311A77D04D00815416 /* MMEX_Subcategory.m */; };
 		A3E959351A77D04D00815416 /* MMEX_Category.m in Sources */ = {isa = PBXBuildFile; fileRef = A3E959341A77D04D00815416 /* MMEX_Category.m */; };
+		A3E959381A7C9C9600815416 /* MMEX_Account.m in Sources */ = {isa = PBXBuildFile; fileRef = A3E959371A7C9C9600815416 /* MMEX_Account.m */; };
 		BE28D35319FA889E00FE96B4 /* MMEXAccountsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE28D35219FA889E00FE96B4 /* MMEXAccountsListViewController.m */; };
 		BE446C011A0127EE0044C7E2 /* MMEXSlideMenuMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE446C001A0127EE0044C7E2 /* MMEXSlideMenuMainViewController.m */; };
 		BE446C041A01289B0044C7E2 /* MMEXSlideMenuLeftTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE446C031A01289B0044C7E2 /* MMEXSlideMenuLeftTableViewController.m */; };
@@ -56,6 +57,8 @@
 		A3E959311A77D04D00815416 /* MMEX_Subcategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMEX_Subcategory.m; sourceTree = "<group>"; };
 		A3E959331A77D04D00815416 /* MMEX_Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMEX_Category.h; sourceTree = "<group>"; };
 		A3E959341A77D04D00815416 /* MMEX_Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMEX_Category.m; sourceTree = "<group>"; };
+		A3E959361A7C9C9600815416 /* MMEX_Account.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMEX_Account.h; sourceTree = "<group>"; };
+		A3E959371A7C9C9600815416 /* MMEX_Account.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMEX_Account.m; sourceTree = "<group>"; };
 		B223519999A0CCDBB883A333 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE28D35119FA889E00FE96B4 /* MMEXAccountsListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMEXAccountsListViewController.h; path = ViewControllers/MMEXAccountsListViewController.h; sourceTree = "<group>"; };
 		BE28D35219FA889E00FE96B4 /* MMEXAccountsListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMEXAccountsListViewController.m; path = ViewControllers/MMEXAccountsListViewController.m; sourceTree = "<group>"; };
@@ -224,6 +227,8 @@
 		BE7711E21A05EC85005F0EA2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A3E959361A7C9C9600815416 /* MMEX_Account.h */,
+				A3E959371A7C9C9600815416 /* MMEX_Account.m */,
 				A3E959331A77D04D00815416 /* MMEX_Category.h */,
 				A3E959341A77D04D00815416 /* MMEX_Category.m */,
 				A3E959301A77D04D00815416 /* MMEX_Subcategory.h */,
@@ -481,6 +486,7 @@
 				BEAA891219F38DFB00C0617D /* AppDelegate.m in Sources */,
 				A3E959351A77D04D00815416 /* MMEX_Category.m in Sources */,
 				BEAA891519F38DFB00C0617D /* MoneyManagerEx.xcdatamodeld in Sources */,
+				A3E959381A7C9C9600815416 /* MMEX_Account.m in Sources */,
 				BEAA891819F38DFB00C0617D /* MMEXFirstAccountViewController.m in Sources */,
 				BE7711E51A05ECDA005F0EA2 /* AccountAssets.m in Sources */,
 				BE446C011A0127EE0044C7E2 /* MMEXSlideMenuMainViewController.m in Sources */,
